@@ -40,8 +40,7 @@ public class ConsoleUI {
                 if (result == GuessResult.CORRECT) {
                     out.println("Correct! You got it in " + game.getAttempts() + " attempts.");
                 } else {
-                    out.println(result == GuessResult.TOO_LOW ? "Too low, try again."
-                                                              : "Too high, try again.");
+                    out.println(result == GuessResult.TOO_LOW ? "Too low, try again." : "Too high, try again.");
                 }
             } catch (InvalidGuessException e) {
                 out.println(e.getMessage());
